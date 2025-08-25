@@ -31,7 +31,7 @@ logging.basicConfig(level=logging.INFO)
 
 # Setup SQLite access
 def get_db_connection():
-    conn = sqlite3.connect("ratings.db")
+    conn = sqlite3.connect("/data/ratings.db")
     conn.execute("""
         CREATE TABLE IF NOT EXISTS ratings (
             user_id TEXT PRIMARY KEY,
